@@ -19,21 +19,21 @@ Other Tools: (e.g., Cloudinary for image storage, Bootstrap/Tailwind for styling
 
 
 ⚙️ Installation & Setup
-1. Clone the repository
+1. Clone the repository <br/>
 bash:
    git clone https://github.com/MahiJoshi27/WanderLust.git
    cd WanderLust
-2. Install dependencies (backend)
+2. Install dependencies (backend) <br/>
 bash:
    npm install
-3. Install dependencies (frontend, if in separate folder)
+3. Install dependencies (frontend, if in separate folder) <br/>
 bash:
    cd client
    npm install
-4. Create a .env file in the root directory and add your environment variables
+4. Create a .env file in the root directory and add your environment variables <br/>
    MONGO_URI=your_mongodb_connection_string
    PORT=5000
-5. Run the app
+5. Run the app <br/>
 bash:
    npm start
    
