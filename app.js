@@ -6,7 +6,7 @@ const path = require("path"); //for setting of ejs file
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const wrapAsync = require("./utils/wrapAsync.js");
-const ExpressErrror = require("./utils/ExpressError.js");
+const ExpressError = require("./utils/ExpressError.js");
 const {listingSchema } = require("./schema.js");
 const Review = require("./models/reviews.js");
 
@@ -138,8 +138,7 @@ app.post("/listings/:id/reviews", async(req, res) =>{
     await newReview.save();
     await listing.save();
 
-    console.log("New Review saved");
-    res.send("New review saved");
+    res.redirect('/listings/${listing._id}');
 
 });
 
